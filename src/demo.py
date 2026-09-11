@@ -38,8 +38,14 @@ print(p.geometry.geom_type)
 # p_bad = Point.from_dict(bad_data)
 
 # Test 3: as_dict()
-print("\nObject as dictionary:")
+# print("\nObject as dictionary:")
 
-p = Point("A", 121.0, 14.6, name="Gate", tag="POI")
+# p = Point("A", 121.0, 14.6, name="Gate", tag="POI")
 
-print(p.as_dict())
+# print(p.as_dict())
+
+# D.3 Test inherited bbox()
+p = Point("A", 121.0, 14.6)
+
+print("\nPoint bbox:")
+print(p.bbox())
